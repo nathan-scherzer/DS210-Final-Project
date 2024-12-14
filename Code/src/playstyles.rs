@@ -1,6 +1,6 @@
 use std::collections::HashMap;
 
-fn calculate_z_score(value: f64, benchmark: f64, weight: f64, std_dev: f64) -> f64 {
+pub fn calculate_z_score(value: f64, benchmark: f64, weight: f64, std_dev: f64) -> f64 {
     ((value - benchmark) / std_dev) * weight
 }
 
